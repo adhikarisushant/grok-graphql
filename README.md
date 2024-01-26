@@ -1,19 +1,8 @@
 # Full Stack TypeScript with GraphQL [![CI](https://github.com/adhikarisushant/grok-graphql/actions/workflows/ci.yml/badge.svg)](https://github.com/adhikarisushant/grok-graphql/actions/workflows/ci.yml)
 
-
 ## Setup
 
-First, if you want to ensure you're using the correct Node.js and package manager versions, [install Volta](http://volta.sh)
-
-```sh
-# install Volta
-curl https://get.volta.sh | bash
-
-# install Node
-volta install node
-```
-
-Then, check out a local copy of this repository
+Check out a local copy of this repository
 
 ```sh
 git clone git@github.com:adhikarisushant/grok-graphql
@@ -42,4 +31,4 @@ After the client and server build processes complete, you should see an "imitati
 
 ## Legal
 
-&copy; 2024 Sushant Adhikari, all rights reserved.
+&copy; 2024 Sushant Adhikari, All rights reserved.
