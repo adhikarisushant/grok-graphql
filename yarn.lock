@@ -1073,15 +1073,6 @@
     tslib "^2.4.0"
     value-or-promise "^1.0.12"
 
-"@graphql-tools/graphql-file-loader@^6.0.0":
-  version "6.2.7"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-6.2.7.tgz#d3720f2c4f4bb90eb2a03a7869a780c61945e143"
-  integrity sha512-5k2SNz0W87tDcymhEMZMkd6/vs6QawDyjQXWtqkuLTBF3vxjxPD1I4dwHoxgWPIjjANhXybvulD7E+St/7s9TQ==
-  dependencies:
-    "@graphql-tools/import" "^6.2.6"
-    "@graphql-tools/utils" "^7.0.0"
-    tslib "~2.1.0"
-
 "@graphql-tools/graphql-file-loader@^7.0.5", "@graphql-tools/graphql-file-loader@^7.3.7", "@graphql-tools/graphql-file-loader@^7.5.0":
   version "7.5.17"
   resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-7.5.17.tgz#7c281617ea3ab4db4d42a2bdb49850f2b937f0f9"
@@ -1089,6 +1080,17 @@
   dependencies:
     "@graphql-tools/import" "6.7.18"
     "@graphql-tools/utils" "^9.2.1"
+    globby "^11.0.3"
+    tslib "^2.4.0"
+    unixify "^1.0.0"
+
+"@graphql-tools/graphql-file-loader@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-8.0.1.tgz#03869b14cb91d0ef539df8195101279bb2df9c9e"
+  integrity sha512-7gswMqWBabTSmqbaNyWSmRRpStWlcCkBc73E6NZNlh4YNuiyKOwbvSkOUYFOqFMfEL+cFsXgAvr87Vz4XrYSbA==
+  dependencies:
+    "@graphql-tools/import" "7.0.1"
+    "@graphql-tools/utils" "^10.0.13"
     globby "^11.0.3"
     tslib "^2.4.0"
     unixify "^1.0.0"
@@ -1105,12 +1107,21 @@
     "@graphql-tools/utils" "^9.2.1"
     tslib "^2.4.0"
 
-"@graphql-tools/import@6.7.18", "@graphql-tools/import@^6.2.6":
+"@graphql-tools/import@6.7.18":
   version "6.7.18"
   resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.7.18.tgz#ad092d8a4546bb6ffc3e871e499eec7ac368680b"
   integrity sha512-XQDdyZTp+FYmT7as3xRWH/x8dx0QZA2WZqfMF5EWb36a0PiH7WwlRQYIdyYXj8YCLpiWkeBXgBRHmMnwEYR8iQ==
   dependencies:
     "@graphql-tools/utils" "^9.2.1"
+    resolve-from "5.0.0"
+    tslib "^2.4.0"
+
+"@graphql-tools/import@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-7.0.1.tgz#4e0d181c63350b1c926ae91b84a4cbaf03713c2c"
+  integrity sha512-935uAjAS8UAeXThqHfYVr4HEAp6nHJ2sximZKO1RzUTq5WoALMAhhGARl0+ecm6X+cqNUwIChJbjtaa6P/ML0w==
+  dependencies:
+    "@graphql-tools/utils" "^10.0.13"
     resolve-from "5.0.0"
     tslib "^2.4.0"
 
@@ -1277,7 +1288,17 @@
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/utils@^7.0.0", "@graphql-tools/utils@^7.5.0":
+"@graphql-tools/utils@^10.0.13":
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-10.1.0.tgz#d8c23a8b8636a5df59b14991bf25eae5ac15d314"
+  integrity sha512-wLPqhgeZ9BZJPRoaQbsDN/CtJDPd/L4qmmtPkjI3NuYJ39x+Eqz1Sh34EAGMuDh+xlOHqBwHczkZUpoK9tvzjw==
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.1.1"
+    cross-inspect "1.0.0"
+    dset "^3.1.2"
+    tslib "^2.4.0"
+
+"@graphql-tools/utils@^7.5.0":
   version "7.10.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-7.10.0.tgz#07a4cb5d1bec1ff1dc1d47a935919ee6abd38699"
   integrity sha512-d334r6bo9mxdSqZW6zWboEnnOOFRrAPVQJ7LkU8/6grglrbcu6WhwCLzHb90E94JI3TD3ricC3YGbUqIi9Xg0w==
@@ -3672,6 +3693,13 @@ cross-fetch@^3.1.5:
   integrity sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==
   dependencies:
     node-fetch "^2.6.12"
+
+cross-inspect@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/cross-inspect/-/cross-inspect-1.0.0.tgz#5fda1af759a148594d2d58394a9e21364f6849af"
+  integrity sha512-4PFfn4b5ZN6FMNGSZlyb7wUhuN8wvj8t/VQHZdM4JsDcruGJ8L2kf9zao98QIrBPFCpdk27qst/AGTl7pL3ypQ==
+  dependencies:
+    tslib "^2.4.0"
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
@@ -7297,11 +7325,6 @@ tslib@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
-
-tslib@~2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
-  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tslib@~2.2.0:
   version "2.2.0"
