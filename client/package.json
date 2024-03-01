@@ -25,7 +25,7 @@
     "date-fns": "^2.28.0",
     "graphql": "^15.0.0",
     "graphql-tag": "^2.0.0",
-    "react-error-boundary": "^3.1.4",
+    "react-error-boundary": "^4.0.13",
     "yarn": "^1.22.18"
   },
   "peerDependencies": {
